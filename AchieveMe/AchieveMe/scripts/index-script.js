@@ -24,7 +24,13 @@ function onBrowserSectionClick() {
 
 
 
-
+$(document).on('keydown', function (ev) {
+    if(ev.keyCode === 27)
+    {
+        $('.current-section').removeClass('current-section');
+        $menuSection.addClass('current-section')
+    }
+})
 
 
 //function onMenuItemMouseOver() {

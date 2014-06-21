@@ -10,11 +10,11 @@
 <body>
     <div id="wrapper">
         <section id="main-menu-section" class="current-section">
-                <ul>
-                    <li id="my-achievements-link" data-link-info="1"><a href="#">My achievements</a></li>
-                    <li id="browse-link" data-link-info="2"><a href="#">Browse achievements</a></li>
-                    <li id="create-link" data-link-info="3"><a href="#">Create new achievements</a></li>
-                </ul>
+            <ul>
+                <li id="my-achievements-link" data-link-info="1"><span>My achievements</span></li>
+                <li id="browse-link" data-link-info="2"><span>Browse achievements</span></li>
+                <li id="create-link" data-link-info="3"><span>Create new achievements</span></li>
+            </ul>
         </section>
 
         <section id="my-achievements-section" data-tab-info="1">
@@ -28,7 +28,7 @@
                 <ul>
                     <li class="browse-tab">
                         <span class="browse-tab-title">Popular</span>
-                        <div class="browse-tab-content current-browse-tab-content"></div>
+                        <div class="browse-tab-content">divdidvvdsdgdsgdfgdg</div>
                     </li>
                     <li class="browse-tab">
                         <span class="browse-tab-title">Latest</span>
@@ -57,14 +57,14 @@
     </div>
 
     <script id="achievement-profile-template" type="text/x-handlebars-template">
-        
+
     </script>
 
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
         {{#userAchievements}}
         <div id="{{achievement.id}}">
             {{#if isCompleted}}
-            <img alt="{{achievement.title}}" src="{{proofOfCompletion}}" class="achievement-completed"/>
+            <img alt="{{achievement.title}}" src="{{proofOfCompletion}}" class="achievement-completed" />
             {{else}}
             <div class="achievement-unfinished">X</div>
             {{/if}}
@@ -76,14 +76,14 @@
     <script id="browse-achievements-grid-template" type="text/x-handlebars-template">
         <div id="browsed-achievements-container">
             {{#achievements}}
-                <div class="browsed-achievement" data-id="{{id}}">
-                    <h4 class="browsed-achievement-title">
-                        {{title}}
-                    </h4>
-                    <p class="browsed-achievement-author">
-                        {{author}}
-                    </p>
-                </div>
+            <div class="browsed-achievement" data-id="{{id}}">
+                <h4 class="browsed-achievement-title">
+                    {{title}}
+                </h4>
+                <p class="browsed-achievement-author">
+                    {{author}}
+                </p>
+            </div>
             {{/achievements}}
         </div>
     </script>
