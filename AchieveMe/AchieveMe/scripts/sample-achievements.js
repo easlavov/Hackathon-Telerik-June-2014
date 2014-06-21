@@ -1,5 +1,4 @@
 ﻿/// <reference path="_references.js" />
-//TODO: Add category to the elements
 var sampleAchievements = [{
     id: 1,
     title: 'Cherni vrah conqueror',
@@ -9,7 +8,7 @@ var sampleAchievements = [{
     author: 'Ivan Petrov',
     category: 'travel',
     linkedAchievements: [],
-    startDate: '15.06.2014',
+    startDate: '15.03.2014',
     endDate: null
 }, {
     id: 2,
@@ -31,7 +30,7 @@ var sampleAchievements = [{
     author: 'Coastal cafe Albena',
     category: 'extreme',
     linkedAchievements: [],
-    startDate: '15.06.2014',
+    startDate: '14.06.2014',
     endDate: '01.08.2014'
 }, {
     id: 4,
@@ -64,7 +63,7 @@ var sampleAchievements = [{
     author: 'Ministry of social policy',
     category: 'extreme',
     linkedAchievements: [],
-    startDate: '15.06.2014',
+    startDate: '04.06.2014',
     endDate: null
 }, {
     id: 7,
@@ -86,7 +85,7 @@ var sampleAchievements = [{
     author: 'Zilla Corp',
     category: 'shopping',
     linkedAchievements: [],
-    startDate: '15.06.2014',
+    startDate: '10.06.2014',
     endDate: null
 }, {
     id: 9,
@@ -108,7 +107,7 @@ var sampleAchievements = [{
     author: 'Freshly Ltd.',
     category: 'health',
     linkedAchievements: [11],
-    startDate: '15.06.2014',
+    startDate: '27.04.2014',
     endDate: null
 }, {
     id:11,
@@ -119,7 +118,7 @@ var sampleAchievements = [{
     author: 'Iglika Petrova',
     category: 'health',
     linkedAchievements: [],
-    startDate: '15.06.2014',
+    startDate: '01.06.2014',
     endDate: null
 }, {
     id: 12,
@@ -150,7 +149,7 @@ userAchievements[2].proofOfCompletion = "choper.jpg";
 userAchievements[2].isCompleted = true;
 userAchievements[2].dateOfCompletion = '17.06.2014';
 
-
+var latestAchievements = getLatestAchievements();
 
 function Achievement(item) {
     this.id = item.id;
@@ -181,4 +180,16 @@ function findItemById(collection, id) {
             return collection[i];
         }
     }
+}
+
+function getLatestAchievements() {
+    var latestAchievements = sampleAchievements.slice(0);
+
+    latestAchievements.sort(function (a, b) {
+        var first = a.startDate.split('.');
+        var second = b.startDate.split('.');
+        return new Date(second[2], second[1] - 1, second[0]) - new Date(first[2], first[1] - 1, first[0]);
+    });
+
+    return latestAchievements;
 }

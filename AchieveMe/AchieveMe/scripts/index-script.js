@@ -4,13 +4,15 @@ var $wrapper = $('#wrapper'),
     $browseSection = $('#browse-section'),
     $categoriesListItem = $('#categories-tab'),
     $achievementsItem = $('#browse-section #popular-tab-content'),
-    $myAchievementsItem = $('#my-achievements-section #grid');
+    $myAchievementsItem = $('#my-achievements-section #grid'),
+    $latestAchievementsItem = $('#browse-section #latest-tab-content');
 
 $menuSection.on('click', 'li', onMenuItemClick);
 $browseSection.on('click', 'span', onBrowserSectionClick);
 $categoriesListItem.on('click', 'span', onCategoriesTabClick);
 $achievementsItem.on('click', '.browsed-achievement', onAchievementItemClick);
 $myAchievementsItem.on('click', '.my-achievement', onMyAchievementItemClick);
+$latestAchievementsItem.on('click', '.browsed-achievement', onLatestAchievementItemClick);
 
 function onMenuItemClick() {
     var listItemDataInfo = $(this).attr('data-link-info'),
@@ -41,6 +43,14 @@ function onCategoriesTabClick() {
 function onAchievementItemClick() {
     var achId = $(this).data('id');
     refreshAchievementProfile(findItemById(sampleAchievements, achId))
+    $wrapper.find('.current-section').removeClass('current-section');
+    $selectedSection = $('[data-tab-info=5]');
+    $selectedSection.addClass('current-section');
+}
+
+function onLatestAchievementItemClick() {
+    var achId = $(this).data('id');
+    refreshAchievementProfile(findItemById(latestAchievements, achId))
     $wrapper.find('.current-section').removeClass('current-section');
     $selectedSection = $('[data-tab-info=5]');
     $selectedSection.addClass('current-section');

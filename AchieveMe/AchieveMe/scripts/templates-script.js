@@ -23,6 +23,13 @@ myAchievementProfileTemplate = Handlebars.compile(string);
 
 refreshBrowseAchContent();
 refreshMyAchContent();
+refreshLatestAchContent();
+
+function refreshLatestAchContent() {
+    $('#browse-section').
+        find('#latest-tab-content').
+        html(getBrowseAchievementsTemplate(latestAchievements));
+}
 
 function refreshBrowseAchContent() {
     $('#browse-section').
