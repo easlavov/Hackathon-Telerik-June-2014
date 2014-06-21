@@ -1,27 +1,4 @@
 ﻿/// <reference path="_references.js" />
-function Achievment(item) {
-    this.title = item.title;
-    this.description = item.description;
-    this.reward = item.reward;
-    this.proof = item.proof;
-    this.author = item.author;
-    this.linkedAchievements = item.linkedAchievements;
-    this.date = new Date(item.startDate);
-
-    return this;
-}
-
-function UserAchievement(achievement) {
-    this.achievement = achievement;
-    this.proofOfCompletion = null;
-    this.dateOfCompletion = null;
-    this.isCompleted = false;
-}
-
-var achievment = new Achievment({});
-
-console.log(achievment);
-
 var sampleAchievements = [{
     id: 1,
     title: 'Cherni vrah conqueror',
@@ -143,3 +120,30 @@ var sampleAchievements = [{
     startDate: '15.06.2014',
     endDate: '22.06.2014'
 }, ];
+
+var achievment = new Achievment({});
+
+var userAchievements = [
+    new UserAchievement(sampleAchievements[1]),
+    new UserAchievement(sampleAchievements[3]),
+    new UserAchievement(sampleAchievements[4])
+];
+
+function Achievment(item) {
+    this.title = item.title;
+    this.description = item.description;
+    this.reward = item.reward;
+    this.proof = item.proof;
+    this.author = item.author;
+    this.linkedAchievements = item.linkedAchievements;
+    this.date = new Date(item.startDate);
+
+    return this;
+}
+
+function UserAchievement(achievement) {
+    this.achievement = achievement;
+    this.proofOfCompletion = null;
+    this.dateOfCompletion = null;
+    this.isCompleted = false;
+}
