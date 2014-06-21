@@ -74,7 +74,18 @@
     </script>
 
     <script id="browse-achievements-grid-template" type="text/x-handlebars-template">
-        <div></div>
+        <div id="browsed-achievements-container">
+            {{#achievements}}
+                <div class="browsed-achievement" data-id="{{id}}">
+                    <h4 class="browsed-achievement-title">
+                        {{title}}
+                    </h4>
+                    <p class="browsed-achievement-author">
+                        {{author}}
+                    </p>
+                </div>
+            {{/achievements}}
+        </div>
     </script>
 
     <script src="scripts/index-script.js"></script>
