@@ -4,6 +4,7 @@ var MY_ACHIEVEMENTS_TEMPLATE_ID = 'my-achievements-grid-template';
 var string;
 var browseAchTemplate;
 var myAchTemplate;
+var achievementProfileTemplate;
 
 string = document.getElementById(BROWSE_ACHIEVEMENTS_TEMPLATE_ID).innerHTML;
 browseAchTemplate = Handlebars.compile(string);
