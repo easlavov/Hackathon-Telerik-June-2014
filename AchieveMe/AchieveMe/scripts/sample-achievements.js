@@ -1,4 +1,5 @@
 ﻿/// <reference path="_references.js" />
+//TODO: Add category to the elements
 var sampleAchievements = [{
     id: 1,
     title: 'Cherni vrah conqueror',

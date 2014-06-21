@@ -19,11 +19,14 @@ achievementProfileTemplate = Handlebars.compile(string);
 refreshBrowseAchContent();
 refreshMyAchContent();
 
+
 $('#browse-section').
     find('#popular-tab-content').
     on('click', '.browsed-achievement', function () {
         var achId = $(this).data('id');
-        // TODO
+        // TODO find the item
+        // TODO: show the page
+        refreshAchievementProfile(sampleAchievements[achId - 1]);
 })
 
 function refreshBrowseAchContent() {
@@ -36,6 +39,12 @@ function refreshMyAchContent() {
     $('#my-achievements-section').
         find('#grid').
         html(getMyAchievementsTemplate(userAchievements));
+}
+
+//show achievements
+function refreshAchievementProfile(item) {
+    $('#achievement-profile-section').
+        html(getAchievementProfile(item));
 }
 
 function getBrowseAchievementsTemplate(items) {
