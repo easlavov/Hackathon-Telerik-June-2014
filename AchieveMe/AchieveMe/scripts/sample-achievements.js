@@ -121,7 +121,7 @@ var sampleAchievements = [{
     endDate: '22.06.2014'
 }, ];
 
-var achievment = new Achievment({});
+var achievment = new Achievement({});
 
 var userAchievements = [
     new UserAchievement(sampleAchievements[1]),
