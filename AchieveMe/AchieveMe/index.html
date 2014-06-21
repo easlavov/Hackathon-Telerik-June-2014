@@ -61,7 +61,12 @@
     </script>
 
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
-
+        {{#userAchievements}}
+        <div id={{id}}>
+            <img alt="{{title}}" src="{{proof}}" />
+            <span>{{title}}</span>
+        </div>
+        {{/userAchievements}}
     </script>
 
     <script id="browse-achievements-grid-template" type="text/x-handlebars-template">
