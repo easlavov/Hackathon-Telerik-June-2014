@@ -65,6 +65,7 @@
     <None Include="scripts\_references.js" />
     <Content Include="my-achievements.html" />
     <Content Include="scripts\index-script.js" />
+    <Content Include="scripts\sample-achievements.js" />
     <Content Include="styles\styles.css">
       <DependentUpon>styles.less</DependentUpon>
     </Content>
