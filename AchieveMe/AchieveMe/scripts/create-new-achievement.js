@@ -23,7 +23,12 @@ $createForm.find('#submit').on('click', function () {
 
     addNewAchievement(newAchievement);
     refreshBrowseAchContent();
+    refreshContainerWidth();
 })
+
+function refreshContainerWidth() {
+    $('section#browse-section div#browsed-achievements-container').css('width', sampleAchievements.length * 180 + 'px');
+}
 
 function addNewAchievement(newAch) {
     var n = new Achievement(newAch);
