@@ -12,13 +12,20 @@ browseAchTemplate = Handlebars.compile(string);
 string = document.getElementById(MY_ACHIEVEMENTS_TEMPLATE_ID).innerHTML;
 myAchTemplate = Handlebars.compile(string);
 
-$('#browse-section').
-    find('#popular-tab-content').
-    append(getBrowseAchievementsTemplate());
+refreshBrowseAchContent();
+refreshMyAchContent();
 
-$('#my-achievements-section').
-    find('#grid').
-    append(getMyAchievementsTemplate());
+function refreshBrowseAchContent() {
+    $('#browse-section').
+        find('#popular-tab-content').
+        html(getBrowseAchievementsTemplate());
+}
+
+function refreshMyAchContent() {
+    $('#my-achievements-section').
+        find('#grid').
+        html(getMyAchievementsTemplate());
+}
 
 function getBrowseAchievementsTemplate() {
     var html = browseAchTemplate({

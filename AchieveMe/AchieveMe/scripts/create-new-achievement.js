@@ -22,6 +22,7 @@ $createForm.find('#submit').on('click', function () {
     };
 
     addNewAchievement(newAchievement);
+    refreshBrowseAchContent();
 })
 
 function addNewAchievement(newAch) {
