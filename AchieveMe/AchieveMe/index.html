@@ -62,14 +62,14 @@
 
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
         {{#userAchievements}}
-        <div id="{{achievement.id}}">
-            {{#if isCompleted}}
-            <img alt="{{achievement.title}}" src="{{proofOfCompletion}}" class="achievement-completed"/>
-            {{else}}
-            <div class="achievement-unfinished">X</div>
-            {{/if}}
-            <span>{{achievement.title}}</span>
-        </div>
+            <div data-id="{{achievement.id}}">
+                {{#if isCompleted}}
+                    <img alt="{{achievement.title}}" src="{{proofOfCompletion}}" class="achievement-completed" />
+                {{else}}
+                    <div class="achievement-unfinished">X</div>
+                {{/if}}
+                <span>{{achievement.title}}</span>
+            </div>
         {{/userAchievements}}
     </script>
 
