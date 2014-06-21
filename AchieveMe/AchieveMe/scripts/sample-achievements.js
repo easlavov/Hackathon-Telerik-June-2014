@@ -11,6 +11,13 @@ function Achievment(item) {
     return this;
 }
 
+function UserAchievement(achievement) {
+    this.achievement = achievement;
+    this.proofOfCompletion = null;
+    this.dateOfCompletion = null;
+    this.isCompleted = false;
+}
+
 var achievment = new Achievment({});
 
 console.log(achievment);
