@@ -64,6 +64,9 @@ body #wrapper section.current-section ul li > span:hover {
 body #wrapper section.current-section ul li > span:hover span {
   font-size: 35px;
 }
+body #wrapper section#my-achievements-section div#grid {
+  overflow-y: auto;
+}
 body #wrapper section#my-achievements-section div#grid > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -71,6 +74,24 @@ body #wrapper section#my-achievements-section div#grid > div {
   border: 1px solid black;
   float: left;
   width: 33.333%;
-  height: 33%;
+  height: 150px;
+}
+body #wrapper section#browse-section div.browse-tab-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+body #wrapper section#browse-section div.browse-tab-content div#browsed-achievements-container {
+  height: 180px;
+  width: 2160px;
+}
+body #wrapper section#browse-section div.browse-tab-content div#browsed-achievements-container div.browsed-achievement {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid black;
+  float: left;
+  height: 180px;
+  padding: 5px;
+  width: 180px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -67,6 +67,8 @@ body {
 
         section#my-achievements-section {
             div#grid {
+                overflow-y: auto;
+
                 & > div {
                     -moz-box-sizing: border-box;
                     -webkit-box-sizing: border-box;
@@ -74,7 +76,30 @@ body {
                     border: 1px solid black;
                     float: left;
                     width: 33.333%;
-                    height: 33%;
+                    height: 150px;
+                }
+            }
+        }
+
+        section#browse-section {
+            div.browse-tab-content {
+                overflow-x: auto;
+                overflow-y: hidden;
+
+                div#browsed-achievements-container {
+                    height: 180px;
+                    width: 2160px;
+
+                    div.browsed-achievement {
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        border: 1px solid black;
+                        float: left;
+                        height: 180px;
+                        padding: 5px;
+                        width: 180px;
+                    }
                 }
             }
         }
