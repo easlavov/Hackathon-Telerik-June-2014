@@ -64,4 +64,13 @@ body #wrapper section.current-section ul li > span:hover {
 body #wrapper section.current-section ul li > span:hover span {
   font-size: 35px;
 }
+body #wrapper section#my-achievements-section div#grid > div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid black;
+  float: left;
+  width: 33.333%;
+  height: 33%;
+}
 /*# sourceMappingURL=styles.css.map */
