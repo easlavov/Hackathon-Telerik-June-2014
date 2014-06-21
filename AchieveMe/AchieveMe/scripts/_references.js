@@ -3,3 +3,4 @@
 /// <reference path="../libs/handlebars-v1.3.0.js" />
 /// <reference path="index-script.js" />
 /// <reference path="sample-achievements.js" />
+/// <reference path="templates-script.js" />
