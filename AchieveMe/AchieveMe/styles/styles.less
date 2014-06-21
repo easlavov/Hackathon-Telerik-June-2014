@@ -11,38 +11,49 @@ body {
         position: relative;
         width: 480px;
         height: 600px;
+        background: red;
+        font-family: sans-serif;
 
         section {
             display: none;
 
-            &.current-section, ul {
+            &.current-section {
                 display: block;
                 width: 100%;
                 height: 100%;
-            }
 
-            &.current-section ul {
-                margin-top: 30%;
-                list-style-type: none;
 
-                li {
+                ul {
+                    margin-top: 30%;
+                    list-style-type: none;
                     width: 100%;
-                    height: 15%;
-                    background: gray;
-                    border: 1px solid black;
-                    border-radius: 20px;
+                    height: 100%;
 
-                    -moz-transition: 0.4s;
-                    -o-transition: 0.4s;
-                    -webkit-transition: 0.4s;
-                    transition: 0.4s;
+                    li {
+                        width: 100%;
+                        height: 15%;
+                        background: #999;
+                        border: 1px solid black;
+                        border-radius: 20px;
+                        -moz-transition: 0.4s;
+                        -o-transition: 0.4s;
+                        -webkit-transition: 0.4s;
+                        transition: 0.4s;
 
-                    & > a {
-                        display: block;
-                        margin-top: 5%;
-                        text-decoration: none;
-                        color: white;
-                        font-size: 25px;
+                        &:hover {
+                            background: lightblue;
+
+                            a, span {
+                                font-size: 35px;
+                            }
+                        }
+
+                        & > a, span {
+                            display: block;
+                            text-decoration: none;
+                            color: white;
+                            font-size: 25px;
+                        }
                     }
                 }
             }
