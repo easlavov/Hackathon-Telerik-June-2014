@@ -57,17 +57,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="browse.html" />
-    <Content Include="create.html" />
     <Content Include="index.html" />
     <Content Include="libs\handlebars-v1.3.0.js" />
     <Content Include="libs\jquery-2.1.1.js" />
     <None Include="scripts\_references.js" />
-    <Content Include="my-achievements.html" />
     <Content Include="scripts\index-script.js" />
     <Content Include="scripts\sample-achievements.js" />
     <Content Include="styles\styles.css">
       <DependentUpon>styles.less</DependentUpon>
+    </Content>
+    <Content Include="styles\styles.min.css">
+      <DependentUpon>styles.css</DependentUpon>
     </Content>
     <Content Include="Web.config" />
     <Content Include="styles\styles.less" />
