@@ -150,3 +150,11 @@ function UserAchievement(achievement) {
     this.dateOfCompletion = null;
     this.isCompleted = false;
 }
+
+function findItemById(collection, id) {
+    for (var i in collection) {
+        if (collection[i].id === id) {
+            return collection[i];
+        }
+    }
+}

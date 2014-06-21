@@ -92,7 +92,7 @@
     <section id="achievement-profile-section" data-tab-info="5">
     </section>
 
-    <script id="achievement-profile-template" type="text/x-handlebars-template">
+    <!--<script id="achievement-profile-template" type="text/x-handlebars-template">
         <div id="achievement-profile">
             <label for="achievement-title-profile">Title:</label>
             <span id="achievement-title-profile">{{title}}</span>
@@ -112,7 +112,7 @@
             <label for="achievement-finish-time-profile">Finish time:</label>
             <span id="achievement-finish-time-profile">{{endDate}}</span>
         </div>
-    </script>
+    </script>-->
 
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
         {{#userAchievements}}
@@ -146,6 +146,7 @@
         <div class="achievement-profile-container">
             <h3>{{title}}</h3>
             <p>{{description}}</p>
+            <div>Author: {{author}}</div>
             <div>Reward: {{reward}}</div>
             <div>How to prove: {{proof}}</div>
             <div>Start date: {{startDate}}</div>

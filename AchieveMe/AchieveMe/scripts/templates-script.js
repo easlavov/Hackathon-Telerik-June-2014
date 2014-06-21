@@ -26,8 +26,10 @@ $('#browse-section').
         var achId = $(this).data('id');
         // TODO find the item
         // TODO: show the page
-        refreshAchievementProfile(sampleAchievements[achId - 1]);
+        refreshAchievementProfile(findItemById(sampleAchievements, achId));
 })
+
+
 
 function refreshBrowseAchContent() {
     $('#browse-section').
