@@ -57,11 +57,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="browse.html" />
+    <Content Include="create.html" />
     <Content Include="index.html" />
     <Content Include="libs\handlebars-v1.3.0.js" />
     <Content Include="libs\jquery-2.1.1.js" />
     <None Include="scripts\_references.js" />
+    <Content Include="my-achievements.html" />
+    <Content Include="scripts\index-script.js" />
+    <Content Include="styles\styles.css">
+      <DependentUpon>styles.less</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
+    <Content Include="styles\styles.less" />
+    <Content Include="styles\styles.css.map">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,7 +86,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="styles\" />
+    <Folder Include="scripts\browse-scripts\" />
+    <Folder Include="scripts\create-scripts\" />
+    <Folder Include="scripts\my-achievements-scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
