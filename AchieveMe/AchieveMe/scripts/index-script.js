@@ -14,13 +14,13 @@ function onMenuItemClick() {
     $selectedSection.addClass('current-section');
 }
 function onBrowserSectionClick() {
-    $clickedListItem = $(this);
-    $clickedBrowseTabContent = $clickedListItem.parent().find('.browse-tab-content');
+    $clickedSpanItem = $(this);
+    $clickedBrowseTabContent = $clickedSpanItem.parent().find('.browse-tab-content');
     if ($clickedBrowseTabContent.hasClass('current-browse-tab-content')) {
         $clickedBrowseTabContent.removeClass('current-browse-tab-content');
     }
     else {
-        $clickedListItem.parent().find('current-browse-tab-content').removeClass('current-browse-tab-content');
+        $clickedSpanItem.parent().parent().find('.current-browse-tab-content').removeClass('current-browse-tab-content');
         $clickedBrowseTabContent.addClass('current-browse-tab-content');
     }
 }
