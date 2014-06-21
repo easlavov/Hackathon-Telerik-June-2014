@@ -4,3 +4,4 @@
 /// <reference path="index-script.js" />
 /// <reference path="sample-achievements.js" />
 /// <reference path="templates-script.js" />
+/// <reference path="create-new-achievement.js" />
