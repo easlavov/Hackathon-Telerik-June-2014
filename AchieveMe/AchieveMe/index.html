@@ -98,7 +98,7 @@
         {{#userAchievements}}
         <div class="my-achievement" data-id="{{id}}">
             {{#if isCompleted}}
-            <img alt="{{achievement.title}}" src="{{proofOfCompletion}}" class="achievement-completed" />
+            <img alt="{{achievement.title}}" src="imgs/{{proofOfCompletion}}" class="achievement-completed" />
             {{else}}
             <div class="achievement-unfinished">In Progress</div>
             {{/if}}
@@ -139,6 +139,7 @@
             <h3>{{achievement.title}}</h3>
             {{#if isCompleted}}
             <img src="imgs/{{proofOfCompletion}}" alt="{{proofOfCompletion}}" />
+            <p>Completed on: {{dateOfCompletion}}</p>
             {{else}}
             <p>In progress</p>
             {{/if}}

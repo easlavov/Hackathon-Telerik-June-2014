@@ -126,9 +126,19 @@ var achievment = new Achievement({});
 
 var userAchievements = [
     new UserAchievement(sampleAchievements[1], 1),
-    new UserAchievement(sampleAchievements[3], 2),
-    new UserAchievement(sampleAchievements[4], 3)
+    new UserAchievement(sampleAchievements[9], 2),
+    new UserAchievement(sampleAchievements[8], 3),
+    new UserAchievement(sampleAchievements[4], 4)
 ];
+
+userAchievements[0].proofOfCompletion = "kaliakra.jpg";
+userAchievements[0].isCompleted = true;
+userAchievements[0].dateOfCompletion = '21.06.2014';
+userAchievements[2].proofOfCompletion = "choper.jpg";
+userAchievements[2].isCompleted = true;
+userAchievements[2].dateOfCompletion = '17.06.2014';
+
+
 
 function Achievement(item) {
     this.id = item.id;
