@@ -12,7 +12,7 @@ string = document.getElementById(MY_ACHIEVEMENTS_TEMPLATE_ID).innerHTML;
 myAchTemplate = Handlebars.compile(string);
 
 $('#browse-section').
-    find('.current-browse-tab-content').
+    find('#popular-tab-content').
     append(getBrowseAchievementsTemplate());
 
 $('#my-achievements-section').
