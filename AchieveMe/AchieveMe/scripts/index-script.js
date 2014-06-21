@@ -7,5 +7,9 @@ var $wrapper = $('#wrapper'),
 
 $menuSection.on('click','li', onMenuItemClick);
 function onMenuItemClick() {
-    var listItemDataInfo = $(this).attr('data-link-info');
+    var listItemDataInfo = $(this).attr('data-link-info'),
+        $selectedSection = $('[data-tab-info=' + listItemDataInfo + ']');
+
+    $menuSection.hide();
+    $selectedSection.show();
 }
