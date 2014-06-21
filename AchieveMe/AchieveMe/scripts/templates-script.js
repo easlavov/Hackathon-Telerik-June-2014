@@ -18,25 +18,25 @@ refreshMyAchContent();
 function refreshBrowseAchContent() {
     $('#browse-section').
         find('#popular-tab-content').
-        html(getBrowseAchievementsTemplate());
+        html(getBrowseAchievementsTemplate(sampleAchievements));
 }
 
 function refreshMyAchContent() {
     $('#my-achievements-section').
         find('#grid').
-        html(getMyAchievementsTemplate());
+        html(getMyAchievementsTemplate(userAchievements));
 }
 
-function getBrowseAchievementsTemplate() {
+function getBrowseAchievementsTemplate(items) {
     var html = browseAchTemplate({
-        achievements : sampleAchievements
+        achievements: items
     });
     return html;
 }
 
-function getMyAchievementsTemplate() {
+function getMyAchievementsTemplate(items) {
     var html = myAchTemplate({
-        userAchievements : userAchievements
+        userAchievements: items
     });
     return html;
 }
