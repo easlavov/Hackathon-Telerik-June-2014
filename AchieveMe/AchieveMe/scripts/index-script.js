@@ -19,8 +19,21 @@ function onMenuItemClick() {
 }
 
 function onMenuItemMouseOver() {
-    $(this).css('background', HOVERED_BG_COLOR);
+    var $hoveredItem = $(this).css({
+        'background': HOVERED_BG_COLOR,   
+
+    });
+    $hoveredItem.find('a').css({
+        'font-size': '30px'
+    })
+
 }
 function onMenuItemMouseOut() {
-    $(this).css('background', DEFAULT_BG_COLOR);
+    var $hoveredItem = $(this).css({
+        'background': DEFAULT_BG_COLOR,
+        'font-size': '20px'
+    });
+    $hoveredItem.find('a').css({
+        'font-size': '25px'
+    })
 }
