@@ -4,7 +4,7 @@ var $wrapper = $('#wrapper'),
     $browseSection = $('#browse-section');
 
 $menuSection.on('click', 'li', onMenuItemClick);
-$browseSection.on('click', 'li', onBrowserSectionClick);
+$browseSection.on('click', 'span', onBrowserSectionClick);
 
 function onMenuItemClick() {
     var listItemDataInfo = $(this).attr('data-link-info'),
@@ -15,7 +15,7 @@ function onMenuItemClick() {
 }
 function onBrowserSectionClick() {
     $clickedListItem = $(this);
-    $clickedBrowseTabContent = $clickedListItem.find('.browse-tab-content');
+    $clickedBrowseTabContent = $clickedListItem.parent().find('.browse-tab-content');
     if ($clickedBrowseTabContent.hasClass('current-browse-tab-content')) {
         $clickedBrowseTabContent.removeClass('current-browse-tab-content');
     }
