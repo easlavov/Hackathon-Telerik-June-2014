@@ -6,21 +6,50 @@
     <script src="libs/jquery-2.1.1.js"></script>
 </head>
 <body>
-    <section id="main-menu-section">
+    <div id="wrapper">
+        <section id="main-menu-section" class="current-section">
+            <nav>                
+                <ul>
+                    <li id="my-achievements-link"><a href="#"></a></li>
+                    <li id="browse-link"><a href="#"></a></li>
+                    <li id="create-link"><a href="#"></a></li>
+                </ul>
+            </nav>
+        </section>
 
-    </section>
+        <section id="my-achievements-section">
+            <div id="grid">
+                <!--template to be displayed here-->
+            </div>
+        </section>
 
-    <section id="my-achievements-section">
+        <section id="browse-section">
+            <div id="browse-acordion-wrapper">
+                <ul>
+                    <li class="browse-tab">
+                        <span>Popular</span>
+                        <div class="current-browse-tab-content"></div>
+                    </li>
+                    <li class="browse-tab">
+                        <span>Latest</span>
+                        <div></div>
+                    </li>
+                    <li class="browse-tab">
+                        <span>Category</span>
+                        <div></div>
+                    </li>
+                    <li class="browse-tab">
+                        <span>Suggestion</span>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    </section>
+        <section id="create-section">
 
-    <section id="browse-section">
-
-    </section>
-
-    <section id="create-section">
-
-    </section>
+        </section>
+    </div>
 
     <script id="achievement-profile-template" type="text/x-handlebars-template">
 
