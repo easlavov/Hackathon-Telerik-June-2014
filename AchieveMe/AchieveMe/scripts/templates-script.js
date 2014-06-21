@@ -24,28 +24,6 @@ myAchievementProfileTemplate = Handlebars.compile(string);
 refreshBrowseAchContent();
 refreshMyAchContent();
 
-
-$('#browse-section').
-    find('#popular-tab-content').
-    on('click', '.browsed-achievement', onClickBrowseAchievements);
-
-$('#my-achievements-section').
-    find('#grid').
-    on('click', '.my-achievement', onClickMyAchievements);
-
-
-function onClickMyAchievements() {
-    var achId = $(this).data('id');
-    // TODO: show the page
-    refreshMyAchievementProfile(findItemById(userAchievements, achId))
-}
-
-function onClickBrowseAchievements() {
-    var achId = $(this).data('id');
-    // TODO: show the page
-    refreshAchievementProfile(findItemById(sampleAchievements, achId))
-}
-
 function refreshBrowseAchContent() {
     $('#browse-section').
         find('#popular-tab-content').
