@@ -125,9 +125,9 @@ var sampleAchievements = [{
 var achievment = new Achievement({});
 
 var userAchievements = [
-    new UserAchievement(sampleAchievements[1]),
-    new UserAchievement(sampleAchievements[3]),
-    new UserAchievement(sampleAchievements[4])
+    new UserAchievement(sampleAchievements[1], 1),
+    new UserAchievement(sampleAchievements[3], 2),
+    new UserAchievement(sampleAchievements[4], 3)
 ];
 
 function Achievement(item) {
@@ -144,7 +144,8 @@ function Achievement(item) {
     return this;
 }
 
-function UserAchievement(achievement) {
+function UserAchievement(achievement, id) {
+    this.id = id;
     this.achievement = achievement;
     this.proofOfCompletion = null;
     this.dateOfCompletion = null;

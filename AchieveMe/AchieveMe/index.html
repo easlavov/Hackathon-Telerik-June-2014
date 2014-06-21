@@ -89,34 +89,13 @@
         </section>
     </div>
 
-    <section id="achievement-profile-section" data-tab-info="5">
-    </section>
+    <section id="achievement-profile-section" data-tab-info="5"></section>
 
-    <!--<script id="achievement-profile-template" type="text/x-handlebars-template">
-        <div id="achievement-profile">
-            <label for="achievement-title-profile">Title:</label>
-            <span id="achievement-title-profile">{{title}}</span>
-            <br />
-            <label for="achievement-description-profile">Description:</label>
-            <span id="achievement-description-profile">{{description}}</span>
-            <br />
-            <label for="achievement-proof-profile">Proof:</label>
-            <span id="achievement-proof-profile">{{proof}}</span>
-            <br />
-            <label for="achievement-reward-profile">Reward:</label>
-            <span id="achievement-reward-profile">{{reward}}</span>
-            <br />
-            <label for="achievement-start-time-profile">Start time:</label>
-            <span id="achievement-start-time-profile">{{startDate}}</span>
-            <br />
-            <label for="achievement-finish-time-profile">Finish time:</label>
-            <span id="achievement-finish-time-profile">{{endDate}}</span>
-        </div>
-    </script>-->
+    <section id="my-achievement-profile-section" data-tab-info="6"></section>
 
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
         {{#userAchievements}}
-        <div id="{{achievement.id}}">
+        <div class="my-achievement" data-id="{{id}}">
             {{#if isCompleted}}
             <img alt="{{achievement.title}}" src="{{proofOfCompletion}}" class="achievement-completed" />
             {{else}}
@@ -151,6 +130,22 @@
             <div>How to prove: {{proof}}</div>
             <div>Start date: {{startDate}}</div>
             <div>End date: {{endDate}}</div>
+        </div>
+    </script>
+
+    <script id="my-achievement-profile-template" type="text/x-handlebars-template">
+        <div class="achievement-profile-container">
+            <h3>{{achievement.title}}</h3>
+            {{#if isCompleted}}
+            <img src="imgs/{{proofOfCompletion}}" alt="{{proofOfCompletion}}" />
+            {{else}}
+            <p>In progress</p>
+            {{/if}}
+            <p>{{achievement.description}}</p>
+            <div>Author: {{achievement.author}}</div>
+            <div>Reward: {{achievement.reward}}</div>
+            <div>Start date: {{achievement.startDate}}</div>
+            <div>End date: {{achievement.endDate}}</div>
         </div>
     </script>
 
