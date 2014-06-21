@@ -36,7 +36,9 @@
                     </li>
                     <li class="browse-tab">
                         <span class="browse-tab-title">Categories</span>
-                        <div id="category-tab-content" class="browse-tab-content"></div>
+                        <div id="category-tab-content" class="browse-tab-content">
+                           
+                        </div>
                     </li>
                     <li class="browse-tab">
                         <span class="browse-tab-title">Suggestion</span>
@@ -61,7 +63,7 @@
                 <input id="achievement-reward" type="text" />
                 <br />
                 <label for="achievement-start-time">Start time:</label>
-                <input type="date" id="achievement-start-time"/>
+                <input type="date" id="achievement-start-time" />
                 <br />
                 <label for="achievement-finish-time">Finish time:</label>
                 <input type="date" id="achievement-finish-time" />
@@ -70,6 +72,23 @@
             </div>
         </section>
     </div>
+
+    <section id="categories-section" data-tab-info="4">
+        <ul>
+            <li class="browse-tab">
+                <span class="browse-tab-title">Education</span>
+                <div id="education-tab-content" class="browse-tab-content"></div>
+            </li>
+            <li class="browse-tab">
+                <span class="browse-tab-title">Sport</span>
+                <div id="sport-tab-content" class="browse-tab-content"></div>
+            </li>
+            <li class="browse-tab">
+                <span class="browse-tab-title">Health</span>
+                <div id="health-tab-content" class="browse-tab-content"></div>
+            </li>
+        </ul>
+    </section>
 
     <script id="achievement-profile-template" type="text/x-handlebars-template">
 
