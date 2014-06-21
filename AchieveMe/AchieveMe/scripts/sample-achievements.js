@@ -129,14 +129,16 @@ var userAchievements = [
     new UserAchievement(sampleAchievements[4])
 ];
 
-function Achievment(item) {
+function Achievement(item) {
+    this.id = item.id;
     this.title = item.title;
     this.description = item.description;
     this.reward = item.reward;
     this.proof = item.proof;
     this.author = item.author;
     this.linkedAchievements = item.linkedAchievements;
-    this.date = new Date(item.startDate);
+    this.startDate = item.startDate;
+    this.endDate = item.endDate;
 
     return this;
 }
