@@ -26,6 +26,8 @@ $createForm.find('#submit').on('click', function () {
     addNewAchievement(newAchievement);
     refreshBrowseAchContent();
     refreshContainerWidth();
+
+    //TODO: Add message to the user and remove text
 })
 
 function refreshContainerWidth() {

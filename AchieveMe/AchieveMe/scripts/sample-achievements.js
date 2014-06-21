@@ -193,3 +193,7 @@ function getLatestAchievements() {
 
     return latestAchievements;
 }
+
+function getSuggestions() {
+    //TODO: some random sort, for example by name or author
+}
