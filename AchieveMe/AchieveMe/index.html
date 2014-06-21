@@ -5,24 +5,25 @@
     <script src="libs/handlebars-v1.3.0.js"></script>
     <script src="libs/jquery-2.1.1.js"></script>
     <link href="styles/styles.css" rel="stylesheet" />
+    <script src="scripts/sample-achievements.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <section id="main-menu-section" class="current-section">
                 <ul>
-                    <li id="my-achievements-link"><a href="#">My achievements</a></li>
-                    <li id="browse-link"><a href="#">Browse achievements</a></li>
-                    <li id="create-link"><a href="#">Create new achievements</a></li>
+                    <li id="my-achievements-link" data-link-info="1"><a href="#">My achievements</a></li>
+                    <li id="browse-link" data-link-info="2"><a href="#">Browse achievements</a></li>
+                    <li id="create-link" data-link-info="3"><a href="#">Create new achievements</a></li>
                 </ul>
         </section>
 
-        <section id="my-achievements-section">
+        <section id="my-achievements-section" data-tab-info="1">
             <div id="grid">
                 <!--template to be displayed here-->
             </div>
         </section>
 
-        <section id="browse-section">
+        <section id="browse-section" data-tab-info="2">
             <div id="browse-acordion-wrapper">
                 <ul>
                     <li class="browse-tab">
@@ -45,7 +46,7 @@
             </div>
         </section>
 
-        <section id="create-section">
+        <section id="create-section" data-tab-info="3">
             <form id="create-achievement-form">
                 <input id="achievement-title" type="text" />
                 <input id="achievement-description" type="text" />
@@ -71,5 +72,7 @@
     <script id="browse-achievements-grid-template" type="text/x-handlebars-template">
 
     </script>
+
+    <script src="scripts/index-script.js"></script>
 </body>
 </html>
