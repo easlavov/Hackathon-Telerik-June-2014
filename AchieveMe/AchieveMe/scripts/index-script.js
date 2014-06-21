@@ -1,10 +1,12 @@
 ﻿/// <reference path="_references.js" />
 var $wrapper = $('#wrapper'),
     $menuSection = $('#main-menu-section'),
-    $browseSection = $('#browse-section');
+    $browseSection = $('#browse-section'),
+    $categoriesListItem = $('#categories-tab');
 
 $menuSection.on('click', 'li', onMenuItemClick);
 $browseSection.on('click', 'span', onBrowserSectionClick);
+$categoriesListItem.on('click', 'span',onCategoriesTabClick)
 
 function onMenuItemClick() {
     var listItemDataInfo = $(this).attr('data-link-info'),
@@ -24,7 +26,11 @@ function onBrowserSectionClick() {
         $clickedBrowseTabContent.addClass('current-browse-tab-content');
     }
 }
-
+function onCategoriesTabClick() {
+    $wrapper.find('.current-section').removeClass('current-section');
+    $selectedSection = $('[data-tab-info=4]');
+    $selectedSection.addClass('current-section');
+}
 
 
 $(document).on('keydown', function (ev) {
