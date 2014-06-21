@@ -2,3 +2,37 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    text-align: center;
+
+    #wrapper {
+        border: 1px solid black;
+        position: relative;
+        width: 480px;
+        height: 600px;
+
+        section {
+            display: none;
+
+            &.current-section, ul {
+                display: block;
+                width: 100%;
+                height: 100%;
+                
+
+                ul {
+                    margin: auto;
+
+                    li {
+                        width: 100%;
+                        height: 15%;
+                        background: gray;
+                        border: 1px solid black;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
