@@ -5,6 +5,7 @@ $createForm.find('#submit').on('click', function () {
     var description = $createForm.find('#achievement-description').val();
     var proof = $createForm.find('#achievement-proof').val();
     var reward = $createForm.find('#achievement-reward').val();
+    var category = $createForm.find('#achievement-category').val();
     var startDate = $createForm.find('#achievement-start-time').val();
     var endDate = $createForm.find('#achievement-finish-time').val();
     var id = sampleAchievements.length + 1;
@@ -16,6 +17,7 @@ $createForm.find('#submit').on('click', function () {
         reward: reward,
         proof: proof,
         author: 'currentUser',
+        category: category,
         linkedAchievements:[],
         startDate: startDate,
         endDate: endDate

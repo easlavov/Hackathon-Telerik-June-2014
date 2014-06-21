@@ -61,6 +61,13 @@
                 <label for="achievement-reward">Reward:</label>
                 <input id="achievement-reward" type="text" />
                 <br />
+                <label for="achievement-category">Category:</label>
+                <select id="achievement-category">
+                    <option value="travel">Travel</option>
+                    <option value="sport">Sport</option>
+                    <option value="health">Health</option>
+                </select>
+                <br />
                 <label for="achievement-start-time">Start time:</label>
                 <input type="date" id="achievement-start-time" />
                 <br />
@@ -74,7 +81,7 @@
         <section id="categories-section" data-tab-info="4">
             <ul>
                 <li class="browse-tab">
-                    <span class="browse-tab-title">Education</span>
+                    <span class="browse-tab-title">Travel</span>
                     <div id="education-tab-content" class="browse-tab-content"></div>
                 </li>
                 <li class="browse-tab">
@@ -129,6 +136,7 @@
             <div>Author: {{author}}</div>
             <div>Reward: {{reward}}</div>
             <div>How to prove: {{proof}}</div>
+            <div>Category: {{category}}</div>
             <div>Start date: {{startDate}}</div>
             <div>End date: {{endDate}}</div>
         </div>
@@ -146,6 +154,7 @@
             <p>{{achievement.description}}</p>
             <div>Author: {{achievement.author}}</div>
             <div>Reward: {{achievement.reward}}</div>
+            <div>Category: {{achievement.category}}</div>
             <div>Start date: {{achievement.startDate}}</div>
             <div>End date: {{achievement.endDate}}</div>
         </div>

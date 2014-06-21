@@ -7,6 +7,7 @@ var sampleAchievements = [{
     reward: null,
     proof: 'Upload a picture',
     author: 'Ivan Petrov',
+    category: 'travel',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: null
@@ -17,6 +18,7 @@ var sampleAchievements = [{
     reward: null,
     proof: 'Upload a picture',
     author: 'Desi Milenkova',
+    category: 'travel',
     linkedAchievements: [],
     startDate: '08.06.2014',
     endDate: null
@@ -27,6 +29,7 @@ var sampleAchievements = [{
     reward: 'Free banana shake',
     proof: 'Upload a picture',
     author: 'Coastal cafe Albena',
+    category: 'extreme',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: '01.08.2014'
@@ -37,6 +40,7 @@ var sampleAchievements = [{
     reward: 'Free doctors appointment',
     proof: 'Provide official documents.',
     author: 'Ministry of Health',
+    category: 'health',
     linkedAchievements: [],
     startDate: '01.01.2014',
     endDate: '31.12.2014'
@@ -47,6 +51,7 @@ var sampleAchievements = [{
     reward: 'EVEN MORE BEER!',
     proof: 'Official document',
     author: 'Stolichno pivo Ltd',
+    category: 'extreme',
     linkedAchievements: [],
     startDate: '16.07.2014',
     endDate: '23.07.2014'
@@ -57,6 +62,7 @@ var sampleAchievements = [{
     reward: 'Free yearly vacation',
     proof: 'Official document',
     author: 'Ministry of social policy',
+    category: 'extreme',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: null
@@ -67,6 +73,7 @@ var sampleAchievements = [{
     reward: 'Eternal glory',
     proof: 'Official document or recommendation by three friends',
     author: 'Kolyo',
+    category: 'sport',
     linkedAchievements: [],
     startDate: '05.03.2014',
     endDate: null
@@ -77,6 +84,7 @@ var sampleAchievements = [{
     reward: '25% discount for the next calendar year',
     proof: 'Official document',
     author: 'Zilla Corp',
+    category: 'shopping',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: null
@@ -87,6 +95,7 @@ var sampleAchievements = [{
     reward: null,
     proof: 'Upload a picture and get endorsed by 3 rockers',
     author: 'Burning Wheels corp',
+    category: 'extreme',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: null
@@ -97,6 +106,7 @@ var sampleAchievements = [{
     reward: '20% discount on fresh fruit juice.',
     proof: 'Upload a picture',
     author: 'Freshly Ltd.',
+    category: 'health',
     linkedAchievements: [11],
     startDate: '15.06.2014',
     endDate: null
@@ -107,6 +117,7 @@ var sampleAchievements = [{
     reward: null,
     proof: 'Upload a picture/video',
     author: 'Iglika Petrova',
+    category: 'health',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: null
@@ -117,6 +128,7 @@ var sampleAchievements = [{
     reward: 'A sticker',
     proof: 'Official document',
     author: 'Ivalyo Minkov - Niki',
+    category: 'sport',
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: '22.06.2014'
@@ -147,6 +159,7 @@ function Achievement(item) {
     this.reward = item.reward;
     this.proof = item.proof;
     this.author = item.author;
+    this.category = item.category;
     this.linkedAchievements = item.linkedAchievements;
     this.startDate = item.startDate;
     this.endDate = item.endDate;
