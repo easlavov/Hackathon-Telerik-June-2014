@@ -1,5 +1,5 @@
 ﻿
-﻿html, body, div, a, p, article, ul, li, header, nav, footer, img, h2, h4 {
+﻿html, body, div, a, p, article, ul, li, header, nav, footer, img, h2, h3, h4 {
     padding: 0;
     margin: 0;
 }
@@ -78,9 +78,9 @@ body {
                     text-align: left;
 
                     h2 {
-                        margin:0;
-                        text-align:center;
-                        padding:20px;
+                        margin: 0;
+                        text-align: center;
+                        padding: 20px;
                     }
 
                     label {
@@ -96,18 +96,20 @@ body {
                         border-radius: 10px;
                         background-color: rgb(242, 224, 17);
                         padding: 5px 10px;
-                        width:200px;
+                        width: 200px;
                     }
-                    textarea{
-                        width:200px;
-                        height:50px;
+
+                    textarea {
+                        width: 200px;
+                        height: 50px;
                     }
-                    button{
-                        margin-left:180px;
-                        margin-top:20px;
+
+                    button {
+                        margin-left: 180px;
+                        margin-top: 20px;
                         border-radius: 10px;
                         background-color: rgb(17, 242, 63);
-                        height:40px;
+                        height: 40px;
                     }
                 }
             }
@@ -258,10 +260,25 @@ body {
         }
 
         section#my-achievement-profile-section {
+            background-color: @bg-color;
 
+            div.achievement-profile-container {
+                h3 {
+                    font-size: 30px;
+                    padding: 10px;
+                }
 
-            img {
-                width: 90%;
+                img {
+                    &:first-of-type {
+                        .box();
+                        width: 90%;
+                    }
+                }
+
+                img.share {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
     }

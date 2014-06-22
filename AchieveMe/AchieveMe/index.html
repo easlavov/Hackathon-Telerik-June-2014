@@ -51,7 +51,7 @@
             <div id="create-achievement-form">
                 <h2>Add new achievement</h2>
                 <label for="achievement-title">Title:</label>
-                <input id="achievement-title" type="text" placeholder="Enter achievement title"/>
+                <input id="achievement-title" type="text" placeholder="Enter achievement title" />
                 <br />
                 <label for="achievement-description">Description:</label>
                 <input id="achievement-description" type="text" placeholder="Enter achievement description" />
@@ -60,7 +60,7 @@
                 <input id="achievement-proof" type="text" placeholder="What proof you are requiring" /> <!--Radio buttons?-->
                 <br />
                 <label for="achievement-reward">Reward:</label>
-               <!-- <textarea id="achievement-reward" placeholder="Describe the reward you are willing to offer"></textarea>-->
+                <!-- <textarea id="achievement-reward" placeholder="Describe the reward you are willing to offer"></textarea>-->
                 <input id="achievement-reward" type="text" placeholder="Describe the completion reward" />
                 <br />
                 <label for="achievement-category">Category:</label>
@@ -108,9 +108,8 @@
         <section id="my-achievement-profile-section" data-tab-info="6"></section>
 
     </div>
-    <!--TODO: add classes to the divs for the colors-->
-    <!--TODO: add categories template-->
-    <!--TODO: add fake buttons to share: fb, tweeter...-->
+
+
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
         <h2>My achievements</h2>
         {{#userAchievements}}
@@ -168,6 +167,9 @@
             <div>Category: {{achievement.category}}</div>
             <div>Start date: {{achievement.startDate}}</div>
             <div>End date: {{achievement.endDate}}</div>
+            <img class="share" src="imgs/facebook.png" alt="facebook share" />
+            <img class="share" src="imgs/twitter.png" alt="twitter share" />
+            <img class="share" src="imgs/googleplus.png" alt="google+ share" />
         </div>
     </script>
 
