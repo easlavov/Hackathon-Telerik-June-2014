@@ -8,6 +8,9 @@ var browseAchTemplate;
 var myAchTemplate;
 var achievementProfileTemplate;
 var myAchievementProfileTemplate;
+var titleTemplate;
+var healthTemplate;
+var sportTemplate;
 
 string = document.getElementById(BROWSE_ACHIEVEMENTS_TEMPLATE_ID).innerHTML;
 browseAchTemplate = Handlebars.compile(string);
@@ -24,6 +27,30 @@ myAchievementProfileTemplate = Handlebars.compile(string);
 refreshBrowseAchContent();
 refreshMyAchContent();
 refreshLatestAchContent();
+refreshTravelContent();
+refreshSportContent();
+refreshHealthContent();
+
+function refreshHealthContent() {
+    latestAchievements = getLatestAchievements();
+    $('#categories-section').
+        find('#health-tab-content').
+        html(getBrowseAchievementsTemplate(healths));
+}
+
+function refreshSportContent() {
+    latestAchievements = getLatestAchievements();
+    $('#categories-section').
+        find('#sport-tab-content').
+        html(getBrowseAchievementsTemplate(sports));
+}
+
+function refreshTravelContent() {
+    latestAchievements = getLatestAchievements();
+    $('#categories-section').
+        find('#travel-tab-content').
+        html(getBrowseAchievementsTemplate(travels));
+}
 
 function refreshLatestAchContent() {
     latestAchievements = getLatestAchievements();

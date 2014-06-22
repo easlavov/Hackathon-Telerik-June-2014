@@ -131,7 +131,103 @@ var sampleAchievements = [{
     linkedAchievements: [],
     startDate: '15.06.2014',
     endDate: '22.06.2014'
-}, ];
+}];
+
+var sports = [{
+    id: 7,
+    title: 'Semi-pro',
+    description: 'Win an amateur competition in any kind of sport.',
+    reward: 'Eternal glory',
+    proof: 'Official document or recommendation by three friends',
+    author: 'Kolyo',
+    category: 'sport',
+    linkedAchievements: [],
+    startDate: '05.03.2014',
+    endDate: null
+}, {
+    id: 12,
+    title: 'Hackaninja',
+    description: 'Attend a hackaton event',
+    reward: 'A sticker',
+    proof: 'Official document',
+    author: 'Ivalyo Minkov - Niki',
+    category: 'sport',
+    linkedAchievements: [],
+    startDate: '15.06.2014',
+    endDate: '22.06.2014'
+} ];
+
+
+var healths = [{
+    id: 4,
+    title: 'Golden donor',
+    description: 'Donate blood three times in 2014',
+    reward: 'Free doctors appointment',
+    proof: 'Provide official documents.',
+    author: 'Ministry of Health',
+    category: 'health',
+    linkedAchievements: [],
+    startDate: '01.01.2014',
+    endDate: '31.12.2014'
+}, {
+    id: 8,
+    title: 'Devoted Zilla customer',
+    description: 'By products worth 10 000 leva from the Zilla corporation.',
+    reward: '25% discount for the next calendar year',
+    proof: 'Official document',
+    author: 'Zilla Corp',
+    category: 'health',
+    linkedAchievements: [],
+    startDate: '10.06.2014',
+    endDate: null
+}, {
+    id: 10,
+    title: 'Friend of the fruits',
+    description: 'Plant five different fruit trees',
+    reward: '20% discount on fresh fruit juice.',
+    proof: 'Upload a picture',
+    author: 'Freshly Ltd.',
+    category: 'health',
+    linkedAchievements: [11],
+    startDate: '27.04.2014',
+    endDate: null
+}, {
+    id: 11,
+    title: 'Pear maniac',
+    description: 'Plant a pear tree.',
+    reward: null,
+    proof: 'Upload a picture/video',
+    author: 'Iglika Petrova',
+    category: 'health',
+    linkedAchievements: [],
+    startDate: '01.06.2014',
+    endDate: null
+}];
+
+var travels = [{
+    id: 1,
+    title: 'Cherni vrah conqueror',
+    description: 'Climb the Cherni vrah peak in Vitosha.',
+    reward: null,
+    proof: 'Upload a picture',
+    author: 'Ivan Petrov',
+    category: 'travel',
+    linkedAchievements: [],
+    startDate: '15.03.2014',
+    endDate: null
+}, {
+    id: 2,
+    title: 'Kaliakra cape guest',
+    description: 'Travel to the Kaliakra cape.',
+    reward: null,
+    proof: 'Upload a picture',
+    author: 'Desi Milenkova',
+    category: 'travel',
+    linkedAchievements: [],
+    startDate: '08.06.2014',
+    endDate: null
+}];
+
 
 var achievment = new Achievement({});
 
@@ -192,8 +288,4 @@ function getLatestAchievements() {
     });
 
     return latestAchievements;
-}
-
-function getSuggestions() {
-    //TODO: some random sort, for example by name or author
 }
