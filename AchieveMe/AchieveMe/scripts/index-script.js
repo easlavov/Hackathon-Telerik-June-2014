@@ -6,7 +6,8 @@ var $wrapper = $('#wrapper'),
     $achievementsItem = $('#browse-section #popular-tab-content'),
     $myAchievementsItem = $('#my-achievements-section #grid'),
     $latestAchievementsItem = $('#browse-section #latest-tab-content'),
-    $itemInCategorySection = $('#categories-section');
+    $itemInCategorySection = $('#categories-section'),
+    $achievementProfile = $('achievement-profile-section');
 
 $menuSection.on('click', 'li', onMenuItemClick);
 $browseSection.on('click', 'span', onBrowserSectionClick);
@@ -15,6 +16,7 @@ $achievementsItem.on('click', '.browsed-achievement', onAchievementItemClick);
 $myAchievementsItem.on('click', '.my-achievement', onMyAchievementItemClick);
 $latestAchievementsItem.on('click', '.browsed-achievement', onLatestAchievementItemClick);
 $itemInCategorySection.on('click', 'span', onBrowserSectionClick);
+$achievementProfile.on('click', 'button', addAchievementToFavourites);
 
 function onMenuItemClick() {
     var listItemDataInfo = $(this).attr('data-link-info'),
@@ -73,3 +75,11 @@ $(document).on('keydown', function (ev) {
     }
 })
 
+function addAchievementToFavourites() {
+    var id = $(this).attr('date-typeid');
+    var element = findItemById(id);
+
+    userAchievements.push(element);
+    refreshUserAchievementsContent();
+    alert('Achievements add to favourites!');
+}
