@@ -282,6 +282,9 @@ body #wrapper section#categories-section #sport-tab-content div.browsed-achievem
 body #wrapper section#categories-section #health-tab-content div.browsed-achievements-container {
   width: 720px;
 }
+body #wrapper section#achievement-profile-section .achievement-profile-container {
+  background: #98d6ff;
+}
 body #wrapper section#my-achievement-profile-section img {
   width: 90%;
 }

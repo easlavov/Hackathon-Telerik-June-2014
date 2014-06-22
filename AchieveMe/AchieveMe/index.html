@@ -51,7 +51,7 @@
             <div id="create-achievement-form">
                 <h2>Add new achievement</h2>
                 <label for="achievement-title">Title:</label>
-                <input id="achievement-title" type="text" placeholder="Enter achievement title"/>
+                <input id="achievement-title" type="text" placeholder="Enter achievement title" />
                 <br />
                 <label for="achievement-description">Description:</label>
                 <input id="achievement-description" type="text" placeholder="Enter achievement description" />
@@ -60,7 +60,7 @@
                 <input id="achievement-proof" type="text" placeholder="What proof you are requiring" /> <!--Radio buttons?-->
                 <br />
                 <label for="achievement-reward">Reward:</label>
-               <!-- <textarea id="achievement-reward" placeholder="Describe the reward you are willing to offer"></textarea>-->
+                <!-- <textarea id="achievement-reward" placeholder="Describe the reward you are willing to offer"></textarea>-->
                 <input id="achievement-reward" type="text" placeholder="Describe the completion reward" />
                 <br />
                 <label for="achievement-category">Category:</label>
@@ -144,12 +144,12 @@
         <div class="achievement-profile-container">
             <h3>{{title}}</h3>
             <p>{{description}}</p>
-            <div>Author: {{author}}</div>
-            <div>Reward: {{reward}}</div>
-            <div>How to prove: {{proof}}</div>
-            <div>Category: {{category}}</div>
-            <div>Start date: {{startDate}}</div>
-            <div>End date: {{endDate}}</div>
+            <div><span class="label">Author:       </span><span class="value">{{author}}   </span></div>
+            <div><span class="label">Reward:       </span><span class="value">{{reward}}   </span></div>
+            <div><span class="label">How to prove: </span><span class="value">   {{proof}} </span>  </div>
+            <div><span class="label">Category:     </span><span class="value">{{category}} </span> </div>
+            <div><span class="label">Start date:   </span><span class="value">{{startDate}}</span> </div>
+            <div><span class="label">End date:     </span><span class="value">{{endDate}}  </span> </div>
         </div>
     </script>
 
