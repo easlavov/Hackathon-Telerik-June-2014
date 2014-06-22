@@ -11,6 +11,7 @@ nav,
 footer,
 img,
 h2,
+h3,
 h4 {
   padding: 0;
   margin: 0;
@@ -282,10 +283,20 @@ body #wrapper section#categories-section #sport-tab-content div.browsed-achievem
 body #wrapper section#categories-section #health-tab-content div.browsed-achievements-container {
   width: 720px;
 }
-body #wrapper section#achievement-profile-section .achievement-profile-container {
-  background: #98d6ff;
+body #wrapper section#my-achievement-profile-section {
+  background-color: #98d6ff;
 }
-body #wrapper section#my-achievement-profile-section img {
+body #wrapper section#my-achievement-profile-section div.achievement-profile-container h3 {
+  font-size: 30px;
+  padding: 10px;
+}
+body #wrapper section#my-achievement-profile-section div.achievement-profile-container img:first-of-type {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   width: 90%;
+}
+body #wrapper section#my-achievement-profile-section div.achievement-profile-container img.share {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

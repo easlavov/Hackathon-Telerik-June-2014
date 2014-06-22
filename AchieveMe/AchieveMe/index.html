@@ -108,9 +108,8 @@
         <section id="my-achievement-profile-section" data-tab-info="6"></section>
 
     </div>
-    <!--TODO: add classes to the divs for the colors-->
-    <!--TODO: add categories template-->
-    <!--TODO: add fake buttons to share: fb, tweeter...-->
+
+
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
         <h2>My achievements</h2>
         {{#userAchievements}}
@@ -168,6 +167,9 @@
             <div>Category: {{achievement.category}}</div>
             <div>Start date: {{achievement.startDate}}</div>
             <div>End date: {{achievement.endDate}}</div>
+            <img class="share" src="imgs/facebook.png" alt="facebook share" />
+            <img class="share" src="imgs/twitter.png" alt="twitter share" />
+            <img class="share" src="imgs/googleplus.png" alt="google+ share" />
         </div>
     </script>
 
