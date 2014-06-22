@@ -94,6 +94,11 @@ body #wrapper section.current-section #create-achievement-form textarea {
   padding: 5px 10px;
   width: 200px;
 }
+body #wrapper section.current-section #create-achievement-form input:hover,
+body #wrapper section.current-section #create-achievement-form select:hover,
+body #wrapper section.current-section #create-achievement-form textarea:hover {
+  background-color: #e4d311;
+}
 body #wrapper section.current-section #create-achievement-form textarea {
   width: 200px;
   height: 50px;
@@ -104,6 +109,11 @@ body #wrapper section.current-section #create-achievement-form button {
   border-radius: 10px;
   background-color: #11f23f;
   height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+body #wrapper section.current-section #create-achievement-form button:hover {
+  background-color: #09db34;
 }
 body #wrapper section#my-achievements-section div#grid {
   overflow-y: auto;
