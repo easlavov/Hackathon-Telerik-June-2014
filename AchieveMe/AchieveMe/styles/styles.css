@@ -15,10 +15,15 @@ h4 {
   padding: 0;
   margin: 0;
 }
+.box {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
 body {
   text-align: center;
 }
 body #wrapper {
+  margin: 0 auto;
   border: 1px solid black;
   position: relative;
   width: 480px;
@@ -117,10 +122,13 @@ body #wrapper section.current-section #create-achievement-form button:hover {
 }
 body #wrapper section#my-achievements-section div#grid {
   overflow-y: auto;
+  background-color: #98d6ff;
 }
 body #wrapper section#my-achievements-section div#grid > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   float: left;
   width: 33.333%;
@@ -130,8 +138,11 @@ body #wrapper section#my-achievements-section div#grid > div img {
   width: 158px;
   height: 120px;
 }
-body #wrapper section#my-achievements-section div#grid > div div {
-  margin-top: 46px;
+body #wrapper section#my-achievements-section div#grid > div span {
+  font-weight: bold;
+}
+body #wrapper section#my-achievements-section div#grid > div:hover {
+  background-color: #52d041;
 }
 body #wrapper section#browse-section div.browse-tab-content,
 body #wrapper section#categories-section div.browse-tab-content {
@@ -189,6 +200,10 @@ body #wrapper section#categories-section div.browse-tab-content div.travel {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efe700', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 }
+body #wrapper section#browse-section div.browse-tab-content div.travel:hover,
+body #wrapper section#categories-section div.browse-tab-content div.travel:hover {
+  background: #52d041;
+}
 body #wrapper section#browse-section div.browse-tab-content div.health,
 body #wrapper section#categories-section div.browse-tab-content div.health {
   background: #00db00;
@@ -207,6 +222,10 @@ body #wrapper section#categories-section div.browse-tab-content div.health {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00db00', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
+}
+body #wrapper section#browse-section div.browse-tab-content div.health:hover,
+body #wrapper section#categories-section div.browse-tab-content div.health:hover {
+  background: #52d041;
 }
 body #wrapper section#browse-section div.browse-tab-content div.sport,
 body #wrapper section#categories-section div.browse-tab-content div.sport {
@@ -227,6 +246,10 @@ body #wrapper section#categories-section div.browse-tab-content div.sport {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002eff', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 }
+body #wrapper section#browse-section div.browse-tab-content div.sport:hover,
+body #wrapper section#categories-section div.browse-tab-content div.sport:hover {
+  background: #52d041;
+}
 body #wrapper section#browse-section div.browse-tab-content div.extreme,
 body #wrapper section#categories-section div.browse-tab-content div.extreme {
   background: #e0008a;
@@ -245,6 +268,10 @@ body #wrapper section#categories-section div.browse-tab-content div.extreme {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0008a', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
+}
+body #wrapper section#browse-section div.browse-tab-content div.extreme:hover,
+body #wrapper section#categories-section div.browse-tab-content div.extreme:hover {
+  background: #52d041;
 }
 body #wrapper section#categories-section #travel-tab-content div.browsed-achievements-container {
   width: 360px;

@@ -6,10 +6,16 @@
 
 @bg-color: #98d6ff;
 
+.box {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 body {
     text-align: center;
 
     #wrapper {
+        margin: 0 auto;
         border: 1px solid black;
         position: relative;
         width: 480px;
@@ -118,12 +124,13 @@ body {
         section#my-achievements-section {
             div#grid {
                 overflow-y: auto;
+                background-color: @bg-color;
 
                 & > div {
                     -moz-box-sizing: border-box;
                     -webkit-box-sizing: border-box;
+                    .box();
                     box-sizing: border-box;
-                    //border: 1px solid black;
                     float: left;
                     width: 33.333%;
                     height: 150px;
@@ -133,8 +140,12 @@ body {
                         height: 120px;
                     }
 
-                    div {
-                        margin-top: 46px;
+                    span {
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        background-color: #52d041;
                     }
                 }
             }
@@ -187,6 +198,9 @@ body {
                     background: -ms-linear-gradient(top, rgba(239,231,0,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
                     background: linear-gradient(to bottom, rgba(239,231,0,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe700', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                    &:hover {
+                        background: #52d041;
+                    }
                 }
 
                 div.health {
@@ -198,6 +212,9 @@ body {
                     background: -ms-linear-gradient(top, rgba(0,219,0,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
                     background: linear-gradient(to bottom, rgba(0,219,0,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00db00', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                    &:hover {
+                        background: #52d041;
+                    }
                 }
 
                 div.sport {
@@ -209,6 +226,9 @@ body {
                     background: -ms-linear-gradient(top, rgba(0,46,255,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
                     background: linear-gradient(to bottom, rgba(0,46,255,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002eff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                    &:hover {
+                        background: #52d041;
+                    }
                 }
 
                 div.extreme {
@@ -220,6 +240,9 @@ body {
                     background: -ms-linear-gradient(top, rgba(224,0,138,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
                     background: linear-gradient(to bottom, rgba(224,0,138,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0008a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                    &:hover {
+                        background: #52d041;
+                    }
                 }
             }
         }

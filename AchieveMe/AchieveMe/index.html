@@ -112,12 +112,13 @@
     <!--TODO: add categories template-->
     <!--TODO: add fake buttons to share: fb, tweeter...-->
     <script id="my-achievements-grid-template" type="text/x-handlebars-template">
+        <h2>My achievements</h2>
         {{#userAchievements}}
         <div class="my-achievement" data-id="{{id}}">
             {{#if isCompleted}}
             <img alt="{{achievement.title}}" src="imgs/{{proofOfCompletion}}" class="achievement-completed" />
             {{else}}
-            <img alt="in progress" src="imgs/in-progress.png" />
+            <img alt="in progress" src="imgs/in-progress2.png" />
             {{/if}}
             <span>{{achievement.title}}</span>
         </div>
@@ -128,10 +129,10 @@
         <div class="browsed-achievements-container ">
             {{#achievements}}
             <div class="browsed-achievement {{category}}" data-id="{{id}}">
-                    <h4 class="browsed-achievement-title">
-                        {{title}}
-                    </h4>
-                    <p class="browsed-achievement-author">
+                <h4 class="browsed-achievement-title">
+                    {{title}}
+                </h4>
+                <p class="browsed-achievement-author">
                     {{author}}
                 </p>
             </div>
