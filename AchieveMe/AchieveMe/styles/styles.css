@@ -305,6 +305,17 @@ body #wrapper section#achievement-profile-section div.achievement-profile-contai
   margin: 10px;
   margin-left: 120px;
 }
+body #wrapper section#achievement-profile-section div.achievement-profile-container button {
+  font-weight: bold;
+  background: #5bb9ff;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+body #wrapper section#achievement-profile-section div.achievement-profile-container button:hover {
+  font-size: 17px;
+  background: #75c4ff;
+}
 body #wrapper section#my-achievement-profile-section {
   background-color: #98d6ff;
 }
