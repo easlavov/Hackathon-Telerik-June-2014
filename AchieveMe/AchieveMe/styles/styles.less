@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+@bg-color: #98d6ff;
+
 body {
     text-align: center;
 
@@ -11,7 +13,7 @@ body {
         position: relative;
         width: 480px;
         height: 600px;
-        background-color: red;
+        background-color: @bg-color;
         background-image: url("../imgs/background.png");
         font-family: sans-serif;
 
@@ -25,7 +27,8 @@ body {
 
 
                 ul {
-                    margin-top: 30%;
+                    background-color: @bg-color;
+                    margin-top: 45%;
                     list-style-type: none;
                     width: 100%;
 
@@ -38,22 +41,22 @@ body {
                     }
 
                     li > span {
-                        width: 100%;
+                        padding-top: 15px;
+                        margin-left: 10%;
+                        width: 80%;
                         height: 40px;
-                        background: #999;
+                        background: #3095d8;
                         border: 1px solid black;
-                        border-radius: 20px;
+                        border-radius: 30px;
                         -moz-transition: 0.4s;
                         -o-transition: 0.4s;
                         -webkit-transition: 0.4s;
                         transition: 0.4s;
 
                         &:hover {
-                            background: lightblue;
-
-                            span {
-                                font-size: 35px;
-                            }
+                            background: #52d041;
+                            padding-top:10px;
+                            font-size: 30px;
                         }
 
                         display: block;
