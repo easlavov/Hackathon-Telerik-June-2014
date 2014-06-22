@@ -15,7 +15,7 @@ body {
     text-align: center;
 
     #wrapper {
-        margin: 0 auto;
+        margin: 30px auto;
         border: 1px solid black;
         position: relative;
         width: 480px;
@@ -159,7 +159,8 @@ body {
             div.browse-tab-content {
                 overflow-x: auto;
                 overflow-y: hidden;
-
+                width: 75%;
+                margin: 0 auto;
                 div.browsed-achievements-container {
                     height: 180px;
                     width: 2160px;
@@ -317,6 +318,22 @@ body {
                     &:first-of-type {
                         .box();
                         width: 90%;
+                        height:280px;
+                    }
+                }
+                 p.achievement-description{
+                    font-style: italic;
+                    font-weight:bold;
+                    font-size:25px;
+                }
+                div {
+                    text-align: left;
+                    span.label {
+                        font-weight:bold;
+                        display: inline-block;
+                        width: 120px;
+                        margin:5px;
+                        margin-left:120px;
                     }
                 }
 

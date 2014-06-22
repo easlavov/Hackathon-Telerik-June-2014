@@ -149,7 +149,7 @@
             <div><span class="label">Category:     </span><span class="value">{{category}} </span> </div>
             <div><span class="label">Start date:   </span><span class="value">{{startDate}}</span> </div>
             <div><span class="label">End date:     </span><span class="value">{{endDate}}  </span> </div>
-            <button id="add-achievement-button">Add to my achievements</button>
+            <button id="add-achievement-button" data-typeid="{{id}}">Add to my achievements</button>
         </div>
     </script>
 
@@ -162,12 +162,12 @@
             {{else}}
             <p>In progress</p>
             {{/if}}
-            <p>{{achievement.description}}</p>
-            <div>Author: {{achievement.author}}</div>
-            <div>Reward: {{achievement.reward}}</div>
-            <div>Category: {{achievement.category}}</div>
-            <div>Start date: {{achievement.startDate}}</div>
-            <div>End date: {{achievement.endDate}}</div>
+            <p class="achievement-description">{{achievement.description}}</p>
+            <div><span class="label">Author:      </span><span class="value">{{achievement.author}}   </span></div>
+            <div><span class="label">Reward:      </span><span class="value">{{achievement.reward}}   </span></div>
+            <div><span class="label">Category:    </span><span class="value">{{achievement.category}} </span></div>
+            <div><span class="label">Start date:  </span><span class="value">{{achievement.startDate}}</span></div>
+            <div><span class="label">End date:    </span><span class="value">{{achievement.endDate}}  </span></div>
             <img class="share" src="imgs/facebook.png" alt="facebook share" />
             <img class="share" src="imgs/twitter.png" alt="twitter share" />
             <img class="share" src="imgs/googleplus.png" alt="google+ share" />

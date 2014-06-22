@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 body #wrapper {
-  margin: 0 auto;
+  margin: 30px auto;
   border: 1px solid black;
   position: relative;
   width: 480px;
@@ -149,6 +149,8 @@ body #wrapper section#browse-section div.browse-tab-content,
 body #wrapper section#categories-section div.browse-tab-content {
   overflow-x: auto;
   overflow-y: hidden;
+  width: 75%;
+  margin: 0 auto;
 }
 body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container,
 body #wrapper section#categories-section div.browse-tab-content div.browsed-achievements-container {
@@ -327,6 +329,22 @@ body #wrapper section#my-achievement-profile-section div.achievement-profile-con
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   width: 90%;
+  height: 280px;
+}
+body #wrapper section#my-achievement-profile-section div.achievement-profile-container p.achievement-description {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+}
+body #wrapper section#my-achievement-profile-section div.achievement-profile-container div {
+  text-align: left;
+}
+body #wrapper section#my-achievement-profile-section div.achievement-profile-container div span.label {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+  margin: 5px;
+  margin-left: 120px;
 }
 body #wrapper section#my-achievement-profile-section div.achievement-profile-container img.share {
   width: 50px;

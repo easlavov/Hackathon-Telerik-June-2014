@@ -78,8 +78,8 @@ $(document).on('keydown', function (ev) {
 function addAchievementToFavourites() {
     var id = $(this).attr('date-typeid');
     var element = findItemById(id);
-
+    console.log(id)
     userAchievements.push(element);
-    refreshUserAchievementsContent();
+    refreshUserAchievementsContent(userAchievements);
     alert('Achievements add to favourites!');
 }
