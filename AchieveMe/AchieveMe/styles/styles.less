@@ -96,9 +96,10 @@ body {
                         border-radius: 10px;
                         background-color: rgb(242, 224, 17);
                         padding: 5px 10px;
-                        width:200px;
-                        &:hover{
-                              background-color: rgb(228, 211, 17);
+                        width: 200px;
+
+                        &:hover {
+                            background-color: rgb(228, 211, 17);
                         }
                     }
 
@@ -112,11 +113,12 @@ body {
                         margin-top: 20px;
                         border-radius: 10px;
                         background-color: rgb(17, 242, 63);
-                        height:40px;
-                        font-weight:bold;
-                        font-size:20px;
-                        &:hover{
-                             background-color: rgb(9, 219, 52);
+                        height: 40px;
+                        font-weight: bold;
+                        font-size: 20px;
+
+                        &:hover {
+                            background-color: rgb(9, 219, 52);
                         }
                     }
                 }
@@ -265,8 +267,30 @@ body {
         }
 
         section#achievement-profile-section {
-            .achievement-profile-container{
-                background:@bg-color;
+
+            div.achievement-profile-container {
+
+                h3 {
+                    font-size: 30px;
+                    padding: 10px;
+                }
+                p{
+                    font-style: italic;
+                    font-weight:bold;
+                    font-size:25px;
+                }
+                div {
+                    text-align: left;
+                    span.label {
+                        font-weight:bold;
+                        display: inline-block;
+                        width: 120px;
+                        margin:10px;
+                        margin-left:120px;
+                    }
+                }
+
+                background: @bg-color;
             }
         }
 

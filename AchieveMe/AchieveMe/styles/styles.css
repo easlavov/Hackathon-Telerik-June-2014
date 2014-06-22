@@ -283,6 +283,28 @@ body #wrapper section#categories-section #sport-tab-content div.browsed-achievem
 body #wrapper section#categories-section #health-tab-content div.browsed-achievements-container {
   width: 720px;
 }
+body #wrapper section#achievement-profile-section div.achievement-profile-container {
+  background: #98d6ff;
+}
+body #wrapper section#achievement-profile-section div.achievement-profile-container h3 {
+  font-size: 30px;
+  padding: 10px;
+}
+body #wrapper section#achievement-profile-section div.achievement-profile-container p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+}
+body #wrapper section#achievement-profile-section div.achievement-profile-container div {
+  text-align: left;
+}
+body #wrapper section#achievement-profile-section div.achievement-profile-container div span.label {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+  margin: 10px;
+  margin-left: 120px;
+}
 body #wrapper section#my-achievement-profile-section {
   background-color: #98d6ff;
 }
