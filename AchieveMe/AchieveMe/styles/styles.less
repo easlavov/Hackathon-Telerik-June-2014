@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+@bg-color: #98d6ff;
+
 body {
     text-align: center;
 
@@ -11,7 +13,7 @@ body {
         position: relative;
         width: 480px;
         height: 600px;
-        background-color: #98d6ff;
+        background-color: @bg-color;
         background-image: url("../imgs/background.png");
         font-family: sans-serif;
 
@@ -25,7 +27,7 @@ body {
 
 
                 ul {
-                    background-color: #98d6ff;
+                    background-color: @bg-color;
                     margin-top: 45%;
                     list-style-type: none;
                     width: 100%;
@@ -39,8 +41,8 @@ body {
                     }
 
                     li > span {
-                        padding-top:15px;
-                        margin-left:10%;
+                        padding-top: 15px;
+                        margin-left: 10%;
                         width: 80%;
                         height: 40px;
                         background: #3095d8;
@@ -53,10 +55,8 @@ body {
 
                         &:hover {
                             background: #52d041;
-
-                            span {
-                                font-size: 35px;
-                            }
+                            padding-top:10px;
+                            font-size: 30px;
                         }
 
                         display: block;
@@ -117,15 +117,14 @@ body {
         }
 
         section#achievement-profile-section {
-
         }
 
-         section#my-achievement-profile-section {
+        section#my-achievement-profile-section {
 
 
-             img {
-                 width: 90%;
-             }
+            img {
+                width: 90%;
+            }
         }
     }
 }

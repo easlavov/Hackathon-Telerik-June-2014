@@ -64,9 +64,8 @@ body #wrapper section.current-section ul li > span {
 }
 body #wrapper section.current-section ul li > span:hover {
   background: #52d041;
-}
-body #wrapper section.current-section ul li > span:hover span {
-  font-size: 35px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 body #wrapper section#my-achievements-section div#grid {
   overflow-y: auto;
