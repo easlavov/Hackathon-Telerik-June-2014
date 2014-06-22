@@ -1,4 +1,5 @@
-﻿html, body, div, a, p, article, ul, li, header, nav, footer, img, h2 {
+﻿
+﻿html, body, div, a, p, article, ul, li, header, nav, footer, img, h2, h4 {
     padding: 0;
     margin: 0;
 }
@@ -131,7 +132,7 @@ body {
             }
         }
 
-        section#browse-section {
+        section#browse-section, section#categories-section {
             div.browse-tab-content {
                 overflow-x: auto;
                 overflow-y: hidden;
@@ -150,8 +151,24 @@ body {
                         height: 180px;
                         padding: 5px;
                         width: 180px;
+
+                        h4.browsed-achievement-title {
+                            -moz-box-sizing: border-box;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            font-size: 25px;
+                            width: 100%;
+                            height: 130px;
+                            padding-top: 40px;
+                        }
+
+                        p.browsed-achievement-author {
+                            font-style: italic;
+                            font-size: 15px;
+                        }
                     }
                 }
+
 
                 div.travel {
                     background: rgb(239,231,0); /* Old browsers */
@@ -196,6 +213,21 @@ body {
                     background: linear-gradient(to bottom, rgba(224,0,138,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0008a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
                 }
+            }
+        }
+
+
+        section#categories-section {
+            #travel-tab-content div.browsed-achievements-container {
+                width: 360px;
+            }
+
+            #sport-tab-content div.browsed-achievements-container {
+                width: 360px;
+            }
+
+            #health-tab-content div.browsed-achievements-container {
+                width: 720px;
             }
         }
 

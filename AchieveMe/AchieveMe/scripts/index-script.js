@@ -5,7 +5,8 @@ var $wrapper = $('#wrapper'),
     $categoriesListItem = $('#categories-tab'),
     $achievementsItem = $('#browse-section #popular-tab-content'),
     $myAchievementsItem = $('#my-achievements-section #grid'),
-    $latestAchievementsItem = $('#browse-section #latest-tab-content');
+    $latestAchievementsItem = $('#browse-section #latest-tab-content'),
+    $itemInCategorySection = $('#categories-section');
 
 $menuSection.on('click', 'li', onMenuItemClick);
 $browseSection.on('click', 'span', onBrowserSectionClick);
@@ -13,6 +14,7 @@ $categoriesListItem.on('click', 'span', onCategoriesTabClick);
 $achievementsItem.on('click', '.browsed-achievement', onAchievementItemClick);
 $myAchievementsItem.on('click', '.my-achievement', onMyAchievementItemClick);
 $latestAchievementsItem.on('click', '.browsed-achievement', onLatestAchievementItemClick);
+$itemInCategorySection.on('click', 'span', onBrowserSectionClick);
 
 function onMenuItemClick() {
     var listItemDataInfo = $(this).attr('data-link-info'),

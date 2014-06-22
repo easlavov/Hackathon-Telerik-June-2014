@@ -10,7 +10,8 @@ header,
 nav,
 footer,
 img,
-h2 {
+h2,
+h4 {
   padding: 0;
   margin: 0;
 }
@@ -122,16 +123,19 @@ body #wrapper section#my-achievements-section div#grid > div img {
 body #wrapper section#my-achievements-section div#grid > div div {
   margin-top: 46px;
 }
-body #wrapper section#browse-section div.browse-tab-content {
+body #wrapper section#browse-section div.browse-tab-content,
+body #wrapper section#categories-section div.browse-tab-content {
   overflow-x: auto;
   overflow-y: hidden;
 }
-body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container {
+body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container,
+body #wrapper section#categories-section div.browse-tab-content div.browsed-achievements-container {
   height: 180px;
   width: 2160px;
   color: white;
 }
-body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement {
+body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement,
+body #wrapper section#categories-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -141,7 +145,23 @@ body #wrapper section#browse-section div.browse-tab-content div.browsed-achievem
   padding: 5px;
   width: 180px;
 }
-body #wrapper section#browse-section div.browse-tab-content div.travel {
+body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement h4.browsed-achievement-title,
+body #wrapper section#categories-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement h4.browsed-achievement-title {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 25px;
+  width: 100%;
+  height: 130px;
+  padding-top: 40px;
+}
+body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement p.browsed-achievement-author,
+body #wrapper section#categories-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement p.browsed-achievement-author {
+  font-style: italic;
+  font-size: 15px;
+}
+body #wrapper section#browse-section div.browse-tab-content div.travel,
+body #wrapper section#categories-section div.browse-tab-content div.travel {
   background: #efe700;
   /* Old browsers */
   background: -moz-linear-gradient(top, #efe700 0%, #000000 100%);
@@ -159,7 +179,8 @@ body #wrapper section#browse-section div.browse-tab-content div.travel {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efe700', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 }
-body #wrapper section#browse-section div.browse-tab-content div.health {
+body #wrapper section#browse-section div.browse-tab-content div.health,
+body #wrapper section#categories-section div.browse-tab-content div.health {
   background: #00db00;
   /* Old browsers */
   background: -moz-linear-gradient(top, #00db00 0%, #000000 100%);
@@ -177,7 +198,8 @@ body #wrapper section#browse-section div.browse-tab-content div.health {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00db00', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 }
-body #wrapper section#browse-section div.browse-tab-content div.sport {
+body #wrapper section#browse-section div.browse-tab-content div.sport,
+body #wrapper section#categories-section div.browse-tab-content div.sport {
   background: #002eff;
   /* Old browsers */
   background: -moz-linear-gradient(top, #002eff 0%, #000000 100%);
@@ -195,7 +217,8 @@ body #wrapper section#browse-section div.browse-tab-content div.sport {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002eff', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
 }
-body #wrapper section#browse-section div.browse-tab-content div.extreme {
+body #wrapper section#browse-section div.browse-tab-content div.extreme,
+body #wrapper section#categories-section div.browse-tab-content div.extreme {
   background: #e0008a;
   /* Old browsers */
   background: -moz-linear-gradient(top, #e0008a 0%, #000000 100%);
@@ -212,6 +235,15 @@ body #wrapper section#browse-section div.browse-tab-content div.extreme {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0008a', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
+}
+body #wrapper section#categories-section #travel-tab-content div.browsed-achievements-container {
+  width: 360px;
+}
+body #wrapper section#categories-section #sport-tab-content div.browsed-achievements-container {
+  width: 360px;
+}
+body #wrapper section#categories-section #health-tab-content div.browsed-achievements-container {
+  width: 720px;
 }
 body #wrapper section#my-achievement-profile-section img {
   width: 90%;
