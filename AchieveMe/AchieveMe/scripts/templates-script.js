@@ -31,6 +31,13 @@ refreshTravelContent();
 refreshSportContent();
 refreshHealthContent();
 
+function refreshUserAchievementsContent() {
+    latestAchievements = getLatestAchievements();
+    $('#my-achievements-section').
+        find('#grid').
+        html(getMyAchievementProfile(userAchievements));
+}
+
 function refreshHealthContent() {
     latestAchievements = getLatestAchievements();
     $('#categories-section').
