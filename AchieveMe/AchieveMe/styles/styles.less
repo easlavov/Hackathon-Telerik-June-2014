@@ -1,4 +1,4 @@
-﻿html, body, div, a, p, article, ul, li, header, nav, footer, img {
+﻿html, body, div, a, p, article, ul, li, header, nav, footer, img, h2 {
     padding: 0;
     margin: 0;
 }
@@ -55,7 +55,7 @@ body {
 
                         &:hover {
                             background: #52d041;
-                            padding-top:10px;
+                            padding-top: 10px;
                             font-size: 30px;
                         }
 
@@ -63,6 +63,44 @@ body {
                         text-decoration: none;
                         color: white;
                         font-size: 25px;
+                    }
+                }
+
+                #create-achievement-form {
+                    background-color: @bg-color;
+                    text-align: left;
+
+                    h2 {
+                        margin:0;
+                        text-align:center;
+                        padding:20px;
+                    }
+
+                    label {
+                        font-weight: bold;
+                        margin: 10px;
+                        margin-left: 30px;
+                        display: inline-block;
+                        width: 150px;
+                    }
+
+                    input, select, textarea {
+                        font-weight: bold;
+                        border-radius: 10px;
+                        background-color: rgb(242, 224, 17);
+                        padding: 5px 10px;
+                        width:200px;
+                    }
+                    textarea{
+                        width:200px;
+                        height:50px;
+                    }
+                    button{
+                        margin-left:180px;
+                        margin-top:20px;
+                        border-radius: 10px;
+                        background-color: rgb(17, 242, 63);
+                        height:40px;
                     }
                 }
             }
@@ -101,7 +139,7 @@ body {
                 div.browsed-achievements-container {
                     height: 180px;
                     width: 2160px;
-                   color: white;
+                    color: white;
 
                     div.browsed-achievement {
                         -moz-box-sizing: border-box;
