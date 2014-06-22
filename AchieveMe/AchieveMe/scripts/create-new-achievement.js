@@ -18,20 +18,23 @@ $createForm.find('#submit').on('click', function () {
         proof: proof,
         author: 'currentUser',
         category: category,
-        linkedAchievements:[],
+        linkedAchievements: [],
         startDate: startDate,
         endDate: endDate
     };
 
     addNewAchievement(newAchievement);
     refreshBrowseAchContent();
+
+    refreshLatestAchContent();
     refreshContainerWidth();
 
-    //TODO: Add message to the user and remove text
+    alert('Achievement was added successfully!');
+    clearFields();
 })
 
 function refreshContainerWidth() {
-    $('section#browse-section div#browsed-achievements-container').css('width', sampleAchievements.length * 180 + 'px');
+    $('section#browse-section div.browsed-achievements-container').css('width', sampleAchievements.length * 180 + 'px');
 }
 
 function addNewAchievement(newAch) {
@@ -39,4 +42,14 @@ function addNewAchievement(newAch) {
     sampleAchievements.push(n);
 
     console.dir(sampleAchievements);
+}
+
+function clearFields() {
+    $createForm.find('#achievement-title').val('');
+    $createForm.find('#achievement-description').val('');
+    $createForm.find('#achievement-proof').val('');
+    $createForm.find('#achievement-reward').val('');
+    $createForm.find('#achievement-category').val('');
+    $createForm.find('#achievement-start-time').val('');
+    $createForm.find('#achievement-finish-time').val('');
 }

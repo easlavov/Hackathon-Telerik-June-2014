@@ -26,6 +26,7 @@ refreshMyAchContent();
 refreshLatestAchContent();
 
 function refreshLatestAchContent() {
+    latestAchievements = getLatestAchievements();
     $('#browse-section').
         find('#latest-tab-content').
         html(getBrowseAchievementsTemplate(latestAchievements));
