@@ -90,6 +90,7 @@ body #wrapper section#browse-section div.browse-tab-content {
 body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container {
   height: 180px;
   width: 2160px;
+  color: white;
 }
 body #wrapper section#browse-section div.browse-tab-content div.browsed-achievements-container div.browsed-achievement {
   -moz-box-sizing: border-box;
@@ -100,6 +101,78 @@ body #wrapper section#browse-section div.browse-tab-content div.browsed-achievem
   height: 180px;
   padding: 5px;
   width: 180px;
+}
+body #wrapper section#browse-section div.browse-tab-content div.travel {
+  background: #efe700;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #efe700 0%, #000000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efe700), color-stop(100%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #efe700 0%, #000000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #efe700 0%, #000000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #efe700 0%, #000000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #efe700 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efe700', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+body #wrapper section#browse-section div.browse-tab-content div.health {
+  background: #00db00;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00db00 0%, #000000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00db00), color-stop(100%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00db00 0%, #000000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00db00 0%, #000000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00db00 0%, #000000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #00db00 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00db00', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+body #wrapper section#browse-section div.browse-tab-content div.sport {
+  background: #002eff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #002eff 0%, #000000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #002eff), color-stop(100%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #002eff 0%, #000000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #002eff 0%, #000000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #002eff 0%, #000000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #002eff 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002eff', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+body #wrapper section#browse-section div.browse-tab-content div.extreme {
+  background: #e0008a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e0008a 0%, #000000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0008a), color-stop(100%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e0008a 0%, #000000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e0008a 0%, #000000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e0008a 0%, #000000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #e0008a 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0008a', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
 }
 body #wrapper section#my-achievement-profile-section img {
   width: 90%;

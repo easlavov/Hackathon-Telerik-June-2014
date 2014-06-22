@@ -83,7 +83,7 @@ var sampleAchievements = [{
     reward: '25% discount for the next calendar year',
     proof: 'Official document',
     author: 'Zilla Corp',
-    category: 'shopping',
+    category: 'health',
     linkedAchievements: [],
     startDate: '10.06.2014',
     endDate: null
